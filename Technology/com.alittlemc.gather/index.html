@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>开源说明书 - alittlemc_blog</title>
+  
+    <meta name="keywords" content="Android,AndroLua+,Lua">
+  
+
+  
+    <meta name="description" content="com.alittlemc.gather的使用说明.">
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  
+    <link rel="shortcut icon" type='image/x-icon' href="/assets/favicon/favicon_128.png">
+  
+
+  <!-- import link -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/first.css">
+
+  
+
+  
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  
+
+  <script id="loadcss"></script>
+
+</head>
+
+<body>
+  
+
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-grin fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-clock fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-grin fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-clock fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div id="l_body">
+    <div id="l_cover">
+  
+    
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
+          
+            <div class='cover-bg lazyload placeholder' data-bg="file/2.jpg"></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+    
+      <p class="title">alittlemc</p>
+    
+    
+      <p class="subtitle">记录,分享,学习</p>
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-grin fa-fw'></i><p>主页</p>
+            </a>
+          
+            <a href="/archives/"
+              
+                rel="nofollow"
+              
+              
+              id="archives">
+              <i class='fas fa-clock fa-fw'></i><p>归档</p>
+            </a>
+          
+            <a href="/contributors/"
+              
+              
+              id="contributors">
+              <i class='fas fa-handshake fa-fw'></i><p>鸣谢</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+
+    <div id='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+
+<div class='l_main'>
+  <article class="article post white-box reveal md blur article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+      <a title='开源说明书' href='/Technology/com.alittlemc.gather/'>
+        <img class='thumbnail' src='http://www.lua.org/images/luaa.gif'>
+      </a>
+    
+    
+      <h1 class="title">
+        开源说明书
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="file/alittlemc.jpg">
+    <p>alittlemc</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/android/">Android</a><span class="sep"></span><a class="category-link" href="/categories/android/javalua/">javalua</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2019年5月30日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <h1 id="0-开源说明"><a href="#0-开源说明" class="headerlink" title="0.开源说明"></a>0.开源说明</h1><ul>
+<li>本程序完全开源,可用于学习,但是不能用于商业.<blockquote>
+<p>遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+</blockquote>
+</li>
+<li>你可以提取里面的功能来使用,但是请勿二次打包.<h1 id="1-使用说明"><a href="#1-使用说明" class="headerlink" title="1.使用说明"></a>1.使用说明</h1></li>
+<li>打包环境<ul>
+<li>此工程推荐使用<strong>Aluaj</strong>编译打包.</li>
+<li>也可以把<strong>src</strong>的文件提出来当成<strong>AndroLu+/Onelua</strong>等工程使用(注意主题(style.xml)/以及部分src/java封装的代码将无效),<em>在代码中以及备注</em>.</li>
+<li>也可以配合<strong>AndroLua+.jar</strong>等,在<strong>Android Studio</strong>打包,但是会有功能上的缺陷!</li>
+</ul>
+</li>
+<li>基本功能</li>
+</ul>
+<blockquote>
+<p>简单理解就是本程序就是一个提供脚本功能的空壳</p>
+<ul>
+<li>你可以通过脚本实现某些定制某些功能(xx毕业班的电子版同学录,可以存放各式各样的文件和信息)</li>
+<li>当然默认是有一些小工具 </li>
+<li>下载脚本的方法我还没有想好</li>
+</ul>
+</blockquote>
+<ul>
+<li>最基本的功能–<strong>定制软件</strong><ul>
+<li>全部数据都存放在**alittlemc/**目录中</li>
+<li>读取<strong>alittlemc/diy</strong>中的脚本,可以根据其中的文件,动态的修改(在启动时加载一次,如果开启了<strong>预加载</strong>将不会动态加载,推荐在确定代码稳定不再需要修改时开启)程序的界面和各种事件.<ul>
+<li>一个脚本的表现形式分为两种(后面会具体解释):<ul>
+<li><strong>单个文件</strong>:alittlemc/diy/xxx.diy(单文件脚本后缀也可以是add)<ul>
+<li>推荐没有额外的媒体文件时使用,而且会优先于文件夹加载</li>
+</ul>
+</li>
+<li><strong>文件夹</strong>:alittlemc/diy/xxx/main.diy<ul>
+<li>请把本脚本的全部额外输出的文件/需要调用的文件都放在在里面,方便备份和删除</li>
+<li>main.diy是固定的入口</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Github源代码链接:{<a href="https://github.com/alittlemc/com.alittlemc.gather" target="_blank" rel="noopener external nofollow noreferrer">com.alittlemc.gather</a>}<br>Code_aliyuan源代码链接(未完成):{<a href="https://code.aliyun.com/alittlemc/com.alittlemc.gather" target="_blank" rel="noopener external nofollow noreferrer">com.alittlemc.gather</a>}</p>
+</blockquote>
+<blockquote>
+<p>Code_aliyuan脚本链接:{<a href="https://code.aliyun.com/alittlemc/alittlemc_by_diy" target="_blank" rel="noopener external nofollow noreferrer">alittlemc_by_diy</a>}(持续更新)<br>Bmob_alittlemc:{这个由我维护}</p>
+</blockquote>
+<hr>
+<h2 id="1-1源代码文件的结构"><a href="#1-1源代码文件的结构" class="headerlink" title="1.1源代码文件的结构"></a>1.1源代码文件的结构</h2><blockquote>
+<ul>
+<li><strong style="font-size:23px;">src-</strong><ul>
+<li><strong>files/</strong>(其他文件,如图片/压缩包等)<ul>
+<li><strong>diy.zip</strong>(初始化自带的diy脚本)</li>
+<li><strong>xxx.png</strong>(图标素材)</li>
+</ul>
+</li>
+<li><strong>java/</strong>(封装的java源代码)<ul>
+<li><strong>AddFuncstion.java</strong>(一些杂乱的方法)</li>
+</ul>
+</li>
+<li><strong>lua/</strong>(lua脚本)<ul>
+<li><strong>alert_dialog.lua</strong>(旧版dialog封装)</li>
+<li><strong>alm.lua</strong>(功能函数)</li>
+<li><strong>code_diy_split.lua</strong>(diy解释)</li>
+<li><strong>fun.lua</strong>(最基本函数)</li>
+<li><strong>其他,用于测试</strong></li>
+</ul>
+</li>
+<li><strong>openSource/</strong>(开源的文件夹)<ul>
+<li><strong>CustomDialog/</strong><ul>
+<li><strong>LICENSE</strong>(开源说明)</li>
+<li><strong>main.lua</strong>(CustomDialog主代码,已经魔改,请配合<strong>link.CD.lua</strong>使用)</li>
+</ul>
+</li>
+<li><strong>NumConvert.lua</strong>(任意进制转换,增强为任意进制转换)<ul>
+<li>main.lua</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>build.lua</strong>(布局,基于开源v7模拟修改)</li>
+<li><strong>icon.png</strong>(程序图标)</li>
+<li><strong>include.lua</strong>(import通用存放)</li>
+<li><strong>init.lua</strong>(AndroLua+的工程清单文件)</li>
+<li><strong>main.lua</strong>(主程序入口)</li>
+<li><strong>main_ui.lua</strong>(列表等布局事件)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="1-2外部文件数据的结构"><a href="#1-2外部文件数据的结构" class="headerlink" title="1.2外部文件数据的结构"></a>1.2外部文件数据的结构</h2><p>所有的文件都在你的手机中的**..alittlemc/**目录中,如果需要完全卸载请同此也删除</p>
+<blockquote>
+<ul>
+<li><strong style="font-size:23px;"><strong>alittlemc-</strong></strong><ul>
+<li><strong>diy/</strong>(存放/执行脚本的目录,谨慎操作!)<ul>
+<li><strong>文件</strong>(如xxx.diy,xxx.add就是脚本文件)</li>
+<li><strong>文件夹</strong>(比如xxx/main.diy,里面要有mian.diy文件夹,一般文件夹中还有其他资源文件和依赖)</li>
+</ul>
+</li>
+<li><strong>list/</strong>(存放临时的脚本数据,比如获取网上脚本的列表,保质期未一天)<ul>
+<li><strong>query编号.json</strong>(从bmob获取网上脚本的列表,一天刷新一次)</li>
+<li>其他(一些脚本也会用上)</li>
+</ul>
+</li>
+<li><strong>data.json</strong>(用户设置的文件,比如xxx功能的开启或者关闭,允许修改,但是不保证修改后能否正常使用)</li>
+<li><strong>func.json</strong>(和下面的是配套出现,如果你打开了**”预加载”<strong>,下一次启动会读取脚本到这个文件,这样以后启动就不需要再读取脚本,**但是新的脚本也不会生效</strong>)</li>
+<li><strong>func.lua</strong>(配套)</li>
+<li><strong>应该没有其他了</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="1-3常用全局变量"><a href="#1-3常用全局变量" class="headerlink" title="1.3常用全局变量"></a>1.3常用全局变量</h2><blockquote>
+<ul>
+<li>布局类<ul>
+<li><strong>hsn</strong>(状态栏高,integer)</li>
+<li><strong>mTheme</strong>(当前主题ID,源于<strong>gen/目录中的R.java参数</strong>,integer)</li>
+<li><strong>theme_n</strong>,<strong>theme_l</strong>(夜间,白天主题色的字符串:<strong>eg-“#FF303030”</strong>,string)</li>
+<li><strong>theme_n_int</strong>,<strong>theme_l_int</strong>(夜间,白天主题色的数字:<strong>eg-0xFF303030</strong>,integer)</li>
+<li>等</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>数据类<ul>
+<li><strong>data</strong>(全部设置的数据数组,table)</li>
+<li><strong>mulu</strong>(绝对目录的前缀,string:”../alittlemc/“)</li>
+<li><strong>sdk</strong>(Android版本,integer)</li>
+<li><strong>string</strong>(列表封装,table)</li>
+<li><strong>diyname</strong>(存放含义布局diy脚本名称,table)</li>
+<li><strong>diyname_all</strong>(存放所有的脚本明,table)</li>
+<li><strong>diyabout</strong>(存放脚本概述,table)</li>
+<li>等</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>常用函数</li>
+</ul>
+</blockquote>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">* integer jishu(<span class="built_in">string</span> a,<span class="built_in">string</span> c)<span class="comment">--&gt;统计a中c字符串出现的次数</span></span><br><span class="line">* <span class="built_in">string</span> colordx(integer a)<span class="comment">--&gt;把a转为布局表中#取色码</span></span><br><span class="line">* boolean app_bool(<span class="built_in">string</span> <span class="built_in">path</span>)<span class="comment">--&gt;判断包名为path的程序是否存在</span></span><br><span class="line">* <span class="built_in">string</span> getJqb()<span class="comment">--&gt;获取系统当前的剪切板内容</span></span><br><span class="line">* void setJqb(<span class="built_in">string</span> sr)<span class="comment">--&gt;设置系统剪切板内容为sr</span></span><br><span class="line">* void tableChange(<span class="built_in">string</span> sr,<span class="built_in">table</span> a,<span class="built_in">table</span> b)<span class="comment">--&gt;批量替换字符串</span></span><br><span class="line">* void intent_url(<span class="built_in">string</span> url)<span class="comment">--&gt;依据url调取其他软件</span></span><br><span class="line">* void OpenFile(<span class="built_in">string</span> <span class="built_in">path</span>,<span class="built_in">string</span> <span class="built_in">mod</span>)<span class="comment">--&gt;调用第三方程序打开path路径的文件,如果找不到打开方式强制用mod文件类型打开(eg:txt)</span></span><br><span class="line">* <span class="built_in">string</span> sgg(<span class="built_in">string</span> str,integer i,integer j)<span class="comment">--&gt;截取str的i到j位置的字符串,eg:sgg(&quot;abc&quot;,1,1)--&gt;a</span></span><br><span class="line">* <span class="built_in">string</span> shell(<span class="built_in">string</span> cmd)<span class="comment">--&gt;执行内容为cmd的shell命令,并却返回</span></span><br><span class="line">* integer randomJava([integer <span class="built_in">min</span>,integer <span class="built_in">max</span>,integer seed])<span class="comment">--&gt;取以seed为种子范围在min-max的随机数,其中任意值都可以缺省</span></span><br><span class="line">* <span class="built_in">string</span>/integer getChar(i)<span class="comment">--&gt;为字符串返回第一个字符的u码,为数字返回对应的字符</span></span><br><span class="line">* void setBz(viewid a,...)<span class="comment">--&gt;将当前壁纸设置为id为a,...的图像控件背景</span></span><br><span class="line">* void DH(...忘记了)<span class="comment">--&gt;请参照属性动画参数</span></span><br><span class="line">* void start_app(<span class="built_in">string</span> s1,<span class="built_in">string</span> s2)<span class="comment">--&gt;启动包名为s1的s2进程</span></span><br><span class="line">* <span class="built_in">string</span> fr(<span class="built_in">string</span> f)<span class="comment">--&gt;读取路径为f文件的内容</span></span><br><span class="line">* void fw(<span class="built_in">string</span> f,<span class="built_in">string</span> str,<span class="built_in">string</span> <span class="built_in">mod</span>)<span class="comment">--&gt;将str以mod模式(默认&quot;w&quot;)写入文件路径f,**将会调用进程,请注意时间,先fw随后fr会读取的旧文件,而不是新文件**</span></span><br><span class="line">* void fw_a(<span class="built_in">string</span> f,<span class="built_in">string</span> str)<span class="comment">--&gt;与fw同,只不过是追加模式</span></span><br><span class="line">* boolean fd(<span class="built_in">string</span> f)<span class="comment">--&gt;删除路径为f的文件,返回是否存在文件</span></span><br><span class="line">* void fod(<span class="built_in">string</span> f)<span class="comment">--&gt;删除f文件夹</span></span><br><span class="line">* boolean fbool(<span class="built_in">string</span> f)<span class="comment">--&gt;返回是否存在路径为f的文件</span></span><br><span class="line">* <span class="built_in">string</span>/integer ft(<span class="built_in">string</span> f,boolean <span class="built_in">mod</span>)<span class="comment">--&gt;如果mod为true,返回带有单位文件大小字符串eg:123Kb,否则返回文件占用字节</span></span><br><span class="line">* void fchange(<span class="built_in">string</span> f,<span class="built_in">string</span> str,<span class="built_in">string</span> sr)<span class="comment">--&gt;把文件路径f的内容中str替换为sr</span></span><br><span class="line">* void fchange_get(<span class="built_in">string</span> f,<span class="built_in">string</span> get,<span class="built_in">string</span> str,<span class="built_in">string</span> sr)<span class="comment">--&gt;把字符串get中str替换为sr并且写入f文件路径</span></span><br><span class="line">* <span class="built_in">string</span>/<span class="built_in">table</span> fr_data(<span class="built_in">string</span> f,boolean <span class="built_in">mod</span>)<span class="comment">--&gt;f为相对路径的私有文件,如果mod为true将私有文件f的内容返回,否则返回以\n分割的字符串数组</span></span><br><span class="line">* void fw_data(<span class="built_in">string</span> f,<span class="built_in">string</span> str)<span class="comment">--&gt;与fr_data类似,只不过是将str写入f为相对路径的私有文件中,调用线程</span></span><br><span class="line">* <span class="built_in">table</span> fr_data(<span class="built_in">string</span> f)<span class="comment">--&gt;将文件路径为f的文件内容,以\n为分割,返回字符串的数组</span></span><br><span class="line">* void frenmae(<span class="built_in">string</span> f,<span class="built_in">string</span> f_)<span class="comment">--&gt;路径为f的文件/文件夹,修改为f_,重命名:把data.json重命名为data.txt,frenmae(&quot;alittlemc/data.json&quot;,&quot;alittlemc/data.txt&quot;),把data.json移动到为/diy/data.txt,frenmae(&quot;alittlemc/data.json&quot;,&quot;alittlemc/diy/data.txt&quot;)</span></span><br><span class="line"><span class="string">&quot;都在**lua/fun.lua**和**lua/alm.lua**中,自己看吧,太多了不写了&quot;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="2-第三方包解释说明"><a href="#2-第三方包解释说明" class="headerlink" title="2.第三方包解释说明"></a>2.第三方包解释说明</h1><h2 id="2-1-CustomDialog-CD"><a href="#2-1-CustomDialog-CD" class="headerlink" title="2.1.CustomDialog (CD)"></a>2.1.CustomDialog (CD)</h2><blockquote>
+<p>FileName: CustomDialog.lua<br>Author: SmallDi<br>Version: 1.0.2<br>Date: 2019-07-24<br>Email: <a href="mailto:&#x31;&#x37;&#53;&#51;&#53;&#50;&#48;&#52;&#54;&#x39;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#x31;&#x37;&#53;&#51;&#53;&#50;&#48;&#52;&#54;&#x39;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a><br>Github: <a href="https://github.com/smalldi/CustomDialog" target="_blank" rel="noopener external nofollow noreferrer">https://github.com/smalldi/CustomDialog</a><br>Description: 纯LuaJava代码编写的高度自定义对话框</p>
+</blockquote>
+<ul>
+<li>:<strong style="font-size:23px;">build</strong>(integer theme)<ul>
+<li>建立Dialog(integer 主题)<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog=CustomDialog:build(android.R.style.Theme_Material_Light_NoActionBar) </span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>:<strong style="font-size:23px;">setCancelable</strong>(boolean bool)</p>
+<ul>
+<li>能否从外侧区域点击关闭(bool=true可以;false不可以;默认nil)<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setCancelable(<span class="literal">true</span>)</span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setTitle</strong>(string title)</p>
+<ul>
+<li>添加标题控件及其内容(string支持Html)<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setTitle(<span class="string">&quot;&lt;font color=&#x27;red&#x27;&gt;Title&lt;/font&gt;&quot;</span>)</span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setMessage</strong>(string message)</p>
+<ul>
+<li>添加内容控件及其内容(string支持Html)<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setMessage(<span class="string">&quot;&lt;font color=&#x27;red&#x27;&gt;Message&lt;/font&gt;&quot;</span>)</span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">addView</strong>(table_layout view)</p>
+<ul>
+<li>添加自定义的控件<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:addView(loadlayout&#123;</span><br><span class="line">TextView;</span><br><span class="line">textSize=<span class="string">&quot;20sp&quot;</span>;</span><br><span class="line">text=<span class="string">&quot;标题&quot;</span>;</span><br><span class="line">paddingTop=<span class="string">&quot;16dp&quot;</span>;</span><br><span class="line">Typeface=FONT_BOLD;</span><br><span class="line">paddingLeft=<span class="string">&quot;16dp&quot;</span>;</span><br><span class="line">paddingRight=<span class="string">&quot;16dp&quot;</span>;</span><br><span class="line">layout_width=<span class="string">&quot;fill&quot;</span>;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setContentView</strong>(table_layout view)</p>
+<ul>
+<li>设置主布局</li>
+<li>与<strong>addView</strong>效果相同</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">addButton</strong>(table_string[0-3] buttons,table_integer[0-3] color)</p>
+<ul>
+<li>添加按钮控件以及设置颜射</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setOnClick</strong>(function(dialog,view) event)</p>
+<ul>
+<li>设置按钮控件的点击事件<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setOnClick(<span class="function"><span class="keyword">function</span><span class="params">(d,v)</span></span></span><br><span class="line">    switch(v.Text)</span><br><span class="line">        case <span class="string">&quot;关闭&quot;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setOnLongClick</strong>(function(dialog,view) event)</p>
+<ul>
+<li>设置按钮控件的长按事件</li>
+<li>与<strong>setOnClick</strong>相同</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">enterAnimation</strong>(Animation anima,number fromX, number toX, number fromY, number toY)</p>
+<ul>
+<li>设置打开动画 <ul>
+<li>当 <strong>anima</strong> 为 <strong>false/nil</strong> 时:默认使用<strong>TranslateAnimation</strong>(平移),并且继续使用<strong>fromX, toX, fromY, toY</strong>(其中若参数不全,用0补全)</li>
+<li>当 <strong>anlma</strong> 为 补间动画类时,执行其动画,后面的参数将不生效<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:exitAnimation(<span class="literal">nil</span>,<span class="number">0</span>, <span class="number">1000</span>, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line"><span class="comment">--或者</span></span><br><span class="line">dialog:exitAnimation(AlphaAnimation(<span class="number">0</span>, <span class="number">1</span>))</span><br><span class="line"><span class="comment">--动画时长默认为</span></span><br><span class="line">activity.getResources().getInteger(android.R.integer.config_mediumAnimTime)</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span>,anima 若第一个参数为动画类 即额外返回该动画修改后赋值,可以用于动画事件</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">exitAnimation</strong>(Animation anima,number fromX, number toX, number fromY, number toY)</p>
+<ul>
+<li>设置关闭动画</li>
+<li>与<strong>exitAnimation</strong>相同</li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setGravity</strong>(Gravity gravity)</p>
+<ul>
+<li>设置位置,默认<strong>Gravity.BOTTOM</strong><figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setGravity(Gravity.BOTTOM)</span><br><span class="line"><span class="comment">--常用</span></span><br><span class="line">Gravity.TOP</span><br><span class="line">Gravity.CENTER</span><br><span class="line">Gravity.BOTTOM</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>:<strong style="font-size:23px;">setRadius</strong>(integer color,number leftTop,number rightTop,number rightBottom,number leftBottom)</p>
+<ul>
+<li>设置背景颜色/圆角大小(分别是左上,右上,左下,右下)<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog:setRadius(<span class="number">0xFF00796B</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>.<strong style="font-size:23px;">show</strong>()</p>
+<ul>
+<li>显示Dialog,无参数,使用<code>.</code>,使用后新追加的(即上面函数的修改)不生效<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog.show()</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>.<strong style="font-size:23px;">hide</strong>()</p>
+<ul>
+<li>立即关闭Dialog,无参数,使用<code>.</code><figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog.hide()</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span>  <span class="built_in">__index</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><ul>
+<li>在本项目中请使用该方法调用<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">CenterDialog=<span class="built_in">require</span> <span class="string">&quot;openSource.CustomDialog.main&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>以上方法都可以叠起来用<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">dialog=CustomDialog.build()</span><br><span class="line">  :setTitle(t.title <span class="keyword">or</span> <span class="string">&quot;标题&quot;</span>)</span><br><span class="line">  :setRadius(Color.WHITE,<span class="number">10</span>,<span class="number">10</span>)</span><br><span class="line">  .show()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://alittlemc.github.io/Technology/com.alittlemc.gather/>https://alittlemc.github.io/Technology/com.alittlemc.gather/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-20T00:41:34+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2019年10月20日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/android/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Android</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/androlua/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>AndroLua+</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/lua/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Lua</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://alittlemc.github.io/Technology/com.alittlemc.gather/&title=开源说明书 - alittlemc_blog&pics=http://www.lua.org/images/luaa.gif&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://alittlemc.github.io/Technology/com.alittlemc.gather/&title=开源说明书 - alittlemc_blog&pics=http://www.lua.org/images/luaa.gif&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://alittlemc.github.io/Technology/com.alittlemc.gather/&title=开源说明书 - alittlemc_blog&pics=http://www.lua.org/images/luaa.gif&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/Technology/AndroLua_Pro_Canvas/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Canvas绘制几何图形</p>
+          <p class='content'>
+温馨提示:请使用电脑浏览器打开,以确保最佳的阅读体验,谢谢.(￣▽￣)”
+
+1. 正文&gt;本家(包)require &#x27;import&#x27;import &#x27;andro...</p>
+        </a>
+      
+      
+        <a class='next' href='/Technology/MC_BE_Addons/'>
+          <p class='title'>Minecraft基岩版addons笔记<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+温馨提示:请使用电脑浏览器打开,以确保最佳的阅读体验,谢谢.(￣▽￣)”
+
+请等待更新
+[0]MC就是minecraft的简写, 读音类似于麦块, 中文翻译为 我的世界[1]这里的minecr...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  
+
+
+
+
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper blur desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E6%BA%90%E4%BB%A3%E7%A0%81%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-text">1.1源代码文件的结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-text">1.2外部文件数据的结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3%E5%B8%B8%E7%94%A8%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="toc-text">1.3常用全局变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-CustomDialog-CD"><span class="toc-text">2.1.CustomDialog (CD)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%98%8E"><span class="toc-text">说明</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+        
+        
+          <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.postTitle="开源说明书";
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+
+  var l_header=document.getElementById("l_header");
+  
+  l_header.classList.add("show");
+  
+</script>
+
+        
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      
+    
+      
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5" target="_blank" class="codename">Volantis</a>
+        作为主题
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a id="s-top" class="fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <script>
+window.volantis={};
+window.volantis.loadcss=document.getElementById("loadcss");
+/********************脚本懒加载函数********************************/
+function loadScript(src, cb) {
+var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+var script = document.createElement('script');
+script.setAttribute('type','text/javascript');
+if (cb) script.onload = cb;
+script.setAttribute('src', src);
+HEAD.appendChild(script);
+}
+//https://github.com/filamentgroup/loadCSS
+var loadCSS = function( href, before, media, attributes ){
+	var doc = window.document;
+	var ss = doc.createElement( "link" );
+	var ref;
+	if( before ){
+		ref = before;
+	}
+	else {
+		var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+		ref = refs[ refs.length - 1];
+	}
+	var sheets = doc.styleSheets;
+	if( attributes ){
+		for( var attributeName in attributes ){
+			if( attributes.hasOwnProperty( attributeName ) ){
+				ss.setAttribute( attributeName, attributes[attributeName] );
+			}
+		}
+	}
+	ss.rel = "stylesheet";
+	ss.href = href;
+	ss.media = "only x";
+	function ready( cb ){
+		if( doc.body ){
+			return cb();
+		}
+		setTimeout(function(){
+			ready( cb );
+		});
+	}
+	ready( function(){
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+	});
+	var onloadcssdefined = function( cb ){
+		var resolvedHref = ss.href;
+		var i = sheets.length;
+		while( i-- ){
+			if( sheets[ i ].href === resolvedHref ){
+				return cb();
+			}
+		}
+		setTimeout(function() {
+			onloadcssdefined( cb );
+		});
+	};
+	function loadCB(){
+		if( ss.addEventListener ){
+			ss.removeEventListener( "load", loadCB );
+		}
+		ss.media = media || "all";
+	}
+	if( ss.addEventListener ){
+		ss.addEventListener( "load", loadCB);
+	}
+	ss.onloadcssdefined = onloadcssdefined;
+	onloadcssdefined( loadCB );
+	return ss;
+};
+</script>
+<script>
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
+  
+  
+  
+  
+</script>
+<!-- required -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+
+
+  
+  
+
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='option'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-text' onclick="document.execCommand('copy')"><i class='fa fa-copy fa-fw'></i>复制文本</a>
+        <hr id='hr-text'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-href'><i class='fa fa-link fa-fw'></i>复制链接</a>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-open-href'><i class='fa fa-external-link-square-alt fa-fw'></i>在新标签页打开</a>
+        <hr id='hr-href'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-src'><i class='fa fa-image fa-fw'></i>复制图片地址</a>
+        <hr id='hr-src'>
+      </li>
+      
+        <li class='navigation'>
+          <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+        </li>
+      
+      <hr>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <hr>
+        
+      
+        
+      
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' 
+        
+        
+        
+          onclick="document.execCommand('print')"
+        
+        >
+        <i class='fa fa-print fa-fw'></i> 打印页面
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+
+  <script>
+    window.document.oncontextmenu = function (event) {
+      if (event.ctrlKey) return true;
+      if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true;
+      return popMenu(event);
+    };
+    document.addEventListener("click", function (event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      mymenu.style.display = "none";
+    });
+    function popMenu(event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      var menuContent = document.getElementById('rightmenu-content');
+      var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      mymenu.style.left = event.clientX + "px"; // 获取鼠标位置
+      mymenu.style.top = event.clientY + "px";
+      mymenu.style.display = 'block';
+      if (event.clientX * 2 > screenWidth) {
+        menuContent.classList.add('left');
+      } else {
+        menuContent.classList.remove('left');
+      }
+      if (event.clientY * 2 > screenHeight) {
+        menuContent.classList.add('top');
+      } else {
+        menuContent.classList.remove('top');
+      }
+
+      let hrText = document.getElementById('hr-text');
+      let hrSrc = document.getElementById('hr-src');
+      let hrHref = document.getElementById('hr-href');
+
+      // 选中图片
+      let copySrc = document.getElementById('menu-copy-src');
+      if (copySrc != undefined) {
+        if (event.target.currentSrc) {
+          copySrc.style.display = 'block';
+          copySrc.addEventListener("click", function (e) {
+            copyString(event.target.currentSrc);
+          },{once: true});
+          hrSrc.style.display = 'block';
+        } else {
+          copySrc.style.display = 'none';
+          hrSrc.style.display = 'none';
+        }
+      }
+
+      // 选中按钮
+      // 判断是不是按钮
+      let href = '';
+      if (event.path) {
+        for (i = 0; i < event.path.length; i++) {
+          if (event.path[i].href != undefined && event.path[i].href.length > 0) {
+            href = event.path[i].href;
+          }
+        }
+      }
+
+      let copyText = document.getElementById('menu-copy-text');
+      copyText.style.display = 'none';
+      hrText.style.display = 'none';
+      if (href.length == 0) {
+        // 选中文本
+        if (window.getSelection().toString()) {
+          if ('' == 'true') {
+            copyText.style.display = 'block';
+            hrText.style.display = 'block';
+          }
+        }
+      }
+
+      // 在新标签页打开
+      let openHref = document.getElementById('menu-open-href');
+      if (openHref != undefined) {
+        if (href.length > 0) {
+          openHref.style.display = 'block';
+          openHref.addEventListener("click", function (e) {
+            window.open(href);
+          },{once: true});
+          hrHref.style.display = 'block';
+        } else {
+          openHref.style.display = 'none';
+          hrHref.style.display = 'none';
+        }
+      }
+      // 复制链接
+      let copyHref = document.getElementById('menu-copy-href');
+      if (copyHref != undefined) {
+        if (href.length > 0) {
+          copyHref.style.display = 'block';
+          copyHref.addEventListener("click", function (e) {
+            copyString(href);
+          },{once: true});
+        } else {
+          copyHref.style.display = 'none';
+        }
+      }
+
+      // 有音乐播放器
+      if ('true' == true && ('home,help,examples,contributors,hr,source_docs,source_theme,hr,print,hr,music'||[]).includes('music')) {
+        // 如果有aplayer，初始化一下
+      	try {
+      		checkAPlayer();
+          updateTitle();
+      	} catch (error) {
+      		console.log(error);
+      	}
+      }
+
+      return false; // 该行代码确保系统自带的右键菜单不会被调出
+    }
+    function hideMenu() {
+      document.getElementById('rightmenu-wrapper').style.display = 'none';
+    }
+    function copyString(str) {
+      const input = document.createElement('input');
+      input.setAttribute('readonly', 'readonly');
+      document.body.appendChild(input);
+      input.setAttribute('value', str);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+    document.execCommand('click');
+  </script>
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '598126807';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.4';
+setTimeout(function() {
+  loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css", window.volantis.loadcss);
+
+  loadScript("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js")
+
+  loadScript("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
+
+
+	
+	  loadScript('https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/aplayer.min.js');
+	
+
+}, 10000);
+</script>
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/app.min.js"></script>
+
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js"></script>
+
+  
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+function listenSearch(){
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+}
+document.addEventListener("DOMContentLoaded", listenSearch);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function listennSidebarTOC() {
+  const navItems = document.querySelectorAll(".toc li");
+  if (!navItems.length) return;
+  const sections = [...navItems].map((element) => {
+    const link = element.querySelector(".toc-link");
+    const target = document.getElementById(
+      decodeURI(link.getAttribute("href")).replace("#", "")
+    );
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({
+		top: target.offsetTop + 100,
+		
+		behavior: "smooth"
+		
+	  });
+    });
+    return target;
+  });
+
+  function activateNavByIndex(target) {
+    if (target.classList.contains("active-current")) return;
+
+    document.querySelectorAll(".toc .active").forEach((element) => {
+      element.classList.remove("active", "active-current");
+    });
+    target.classList.add("active", "active-current");
+    let parent = target.parentNode;
+    while (!parent.matches(".toc")) {
+      if (parent.matches("li")) parent.classList.add("active");
+      parent = parent.parentNode;
+    }
+  }
+
+  function findIndex(entries) {
+    let index = 0;
+    let entry = entries[index];
+    if (entry.boundingClientRect.top > 0) {
+      index = sections.indexOf(entry.target);
+      return index === 0 ? 0 : index - 1;
+    }
+    for (; index < entries.length; index++) {
+      if (entries[index].boundingClientRect.top <= 0) {
+        entry = entries[index];
+      } else {
+        return sections.indexOf(entry.target);
+      }
+    }
+    return sections.indexOf(entry.target);
+  }
+
+  function createIntersectionObserver(marginTop) {
+    marginTop = Math.floor(marginTop + 10000);
+    let intersectionObserver = new IntersectionObserver(
+      (entries, observe) => {
+        let scrollHeight = document.documentElement.scrollHeight + 100;
+        if (scrollHeight > marginTop) {
+          observe.disconnect();
+          createIntersectionObserver(scrollHeight);
+          return;
+        }
+        let index = findIndex(entries);
+        activateNavByIndex(navItems[index]);
+      },
+      {
+        rootMargin: marginTop + "px 0px -100% 0px",
+        threshold: 0,
+      }
+    );
+    sections.forEach((element) => {
+      element && intersectionObserver.observe(element);
+    });
+  }
+  createIntersectionObserver(document.documentElement.scrollHeight);
+}
+
+document.addEventListener("DOMContentLoaded", listennSidebarTOC);
+document.addEventListener("pjax:success", listennSidebarTOC);
+</script>
+
+<!-- more -->
+
+
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#l_cover",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      //window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      volantis.$switcher.removeClass('active'); // 关闭移动端激活的搜索框
+      volantis.$header.removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      volantis.$wrapper.removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      volantis.$topBtn.unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+	  
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+	  
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+	  
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+</body>
+</html>

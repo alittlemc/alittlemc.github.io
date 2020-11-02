@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>Java临阵磨枪(全) - alittlemc_blog</title>
+  
+    <meta name="keywords" content="Java习题">
+  
+
+  
+    <meta name="description" content="废话少说,临阵磨枪.">
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  
+    <link rel="shortcut icon" type='image/x-icon' href="/assets/favicon/favicon_128.png">
+  
+
+  <!-- import link -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/first.css">
+
+  
+
+  
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  
+
+  <script id="loadcss"></script>
+
+</head>
+
+<body>
+  
+
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-grin fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-clock fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-grin fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-clock fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div id="l_body">
+    <div id="l_cover">
+  
+    
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
+          
+            <div class='cover-bg lazyload placeholder' data-bg="file/2.jpg"></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+    
+      <p class="title">alittlemc</p>
+    
+    
+      <p class="subtitle">记录,分享,学习</p>
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-grin fa-fw'></i><p>主页</p>
+            </a>
+          
+            <a href="/archives/"
+              
+                rel="nofollow"
+              
+              
+              id="archives">
+              <i class='fas fa-clock fa-fw'></i><p>归档</p>
+            </a>
+          
+            <a href="/contributors/"
+              
+              
+              id="contributors">
+              <i class='fas fa-handshake fa-fw'></i><p>鸣谢</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+
+    <div id='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+
+<div class='l_main no_sidebar'>
+  <article class="article post white-box reveal md blur article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        Java临阵磨枪(全)
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="file/alittlemc.jpg">
+    <p>alittlemc</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年1月9日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <h1 id="习题解答"><a href="#习题解答" class="headerlink" title="习题解答"></a>习题解答</h1><h2 id="习题1（第1章）"><a href="#习题1（第1章）" class="headerlink" title="习题1（第1章）"></a>习题1（第1章）</h2><p>一、问答题</p>
+<p><strong>1．</strong>James Gosling</p>
+<p><strong>2</strong>．需3个步骤：</p>
+<ol>
+<li><p> 用文本编辑器编写源文件。</p>
+</li>
+<li><p> 使用javac编译源文件,得到字节码文件。</p>
+</li>
+<li><p> 使用解释器运行程序。</p>
+</li>
+</ol>
+<p><strong>3．</strong>源文件由若干个类所构成。对于应用程序，必须有一个类含有public static void<br>main(String<br>args[])的方法，含有该方法的类称为应用程序的主类。不一定，但至多有一个public类。</p>
+<p><strong>4</strong>．set classpath=D:\jdk\jre\lib\rt.jar;.;</p>
+<p><strong>5.</strong> java和class</p>
+<p><strong>6.</strong> java Bird</p>
+<p><strong>7.</strong><br>独行风格（大括号独占行）和行尾风格（左大扩号在上一行行尾，右大括号独占行）</p>
+<p>二、选择题</p>
+<p><strong>1</strong>．B。<strong>2</strong>．D。</p>
+<p>三、阅读程序</p>
+<p><strong>1</strong>．</p>
+<p>（a）Person.java。</p>
+<p>（b）两个字节码，分别是Person.class和Xiti.class。</p>
+<p>（c）得到“NoSuchMethodError”，得到“NoClassDefFoundError:<br>Xiti/class”，得到“您好，很高兴认识您 nice to meet you”</p>
+<h2 id="习题2（第2章）"><a href="#习题2（第2章）" class="headerlink" title="习题2（第2章）"></a>习题2（第2章）</h2><p>一、问答题</p>
+<p><strong>1．</strong>用来标识类名、变量名、方法名、类型名、数组名、文件名的有效字符序列称为标识符。标识符由字母、下划线、美元符号和数字组成，第一个字符不能是数字。false不是标识符。</p>
+<p><strong>2．</strong>关键字就是Java语言中已经被赋予特定意义的一些单词，不可以把关键字作为名字来用。true和false不是关键字。6个关键字：class<br>implements interface enum extends abstract。</p>
+<p><strong>3．</strong>boolean，char，byte，short，int，long，float，double。</p>
+<p><strong>4</strong>．float常量必须用F或f为后缀。double常量用D或d为后缀，但允许省略后缀。</p>
+<p><strong>5</strong>．一维数组名.length。二维数组名.length。</p>
+<p>二、选择题</p>
+<p><strong>1</strong>．C。2．ADF。<strong>3</strong>．B。4．BE。<strong>5</strong>．【代码2】【代码3】【代码4】【代码5】。<strong>6</strong>．B。</p>
+<p>三、阅读或调试程序</p>
+<p><strong>1</strong>．属于操作题，解答略。</p>
+<p><strong>2</strong>．属于操作题，解答略。</p>
+<p><strong>3</strong>．属于操作题，解答略。</p>
+<p><strong>4</strong>．【代码1】：4。【代码2】：b[0]=1。</p>
+<p><strong>5</strong>．【代码1】：40。【代码2】：7</p>
+<hr>
+<h2 id="习题3（第3章）"><a href="#习题3（第3章）" class="headerlink" title="习题3（第3章）"></a>习题3（第3章）</h2><p>一、问答题</p>
+<p><strong>1．</strong>boolean</p>
+<p><strong>2</strong>．不可以</p>
+<p><strong>3．</strong>boolean</p>
+<p><strong>4.</strong> 不是必须的</p>
+<p><strong>5．</strong>结束while语句的执行</p>
+<p><strong>6．</strong>可以</p>
+<p>二、选择题</p>
+<p><strong>1．A。 2．C。 3．C。</strong></p>
+<p>三、阅读程序</p>
+<p><strong>1.</strong> 你,苹,甜</p>
+<p><strong>2</strong>．Jeep好好</p>
+<p><strong>3．</strong>x=-5,y=-1</p>
+<hr>
+<h2 id="习题4（第4章）"><a href="#习题4（第4章）" class="headerlink" title="习题4（第4章）"></a>习题4（第4章）</h2><p>一、问答题</p>
+<p><strong>1.</strong> 封装、继承和多态。</p>
+<p><strong>2</strong>．当类名由几个单词复合而成时，每个单词的首字母使用大写。</p>
+<p><strong>3．</strong>名字的首单词的首字母使用小写，如果变量的名字由多个单词组成，从第2个单词开始的其它单词的首字母使用大写。</p>
+<p><strong>4．</strong>属性</p>
+<p><strong>5．</strong>行为</p>
+<p><strong>6．</strong>用类创建对象时。没有类型</p>
+<p><strong>7．</strong>用类创建对象时。</p>
+<p><strong>8．</strong>一个类中可以有多个方法具有相同的名字，但这些方法的参数必须不同，即或者是参数的个数不同，或者是参数的类型不同。可以。</p>
+<p><strong>9．</strong>可以<strong>。</strong>不可以。</p>
+<p><strong>10</strong>．不可以。</p>
+<p><strong>11</strong>．一个类通过使用new运算符可以创建多个不同的对象，不同的对象的实例变量将被分配不同的内存空间。所有对象的类变量都分配给相同的一处内存，对象共享类变量。</p>
+<p><strong>12</strong>．代表调用当前方法的对象。不可以。</p>
+<p>二、选择题</p>
+<p><strong>1</strong>．B。<strong>2</strong>．D。<strong>3</strong>．D。<strong>4</strong>．D。<strong>5</strong>．CD。<strong>6</strong>．【代码1】【代码4】。<strong>7</strong>．【代码4】。</p>
+<p>三、阅读程序</p>
+<p><strong>1</strong>．【代码1】：1，【代码2】：121，【代码3】：121。</p>
+<p><strong>2</strong>．sum=-100。</p>
+<p><strong>3.</strong> 27。</p>
+<p><strong>4</strong>．【代码1】:100，【代码2】：20.0。</p>
+<p><strong>5.</strong> 上机实习题目，解答略。</p>
+<p><strong>6.</strong> 上机实习题目，解答略。</p>
+<hr>
+<h2 id="习题5（第5章）"><a href="#习题5（第5章）" class="headerlink" title="习题5（第5章）"></a>习题5（第5章）</h2><p>一、问答题</p>
+<p>1．不可以。</p>
+<p>2．是。</p>
+<p>3．不继承。</p>
+<p>4．声明与父类同名的成员变量。</p>
+<p>5．子类重写的方法类型和父类的方法的类型一致或者是父类的方法的类型的子类型，重写的方法的名字、参数个数、参数的类型和父类的方法完全相同。重写方法的目的是隐藏继承的方法，子类通过方法的重写可以把父类的状态和行为改变为自身的状态和行为。</p>
+<p>6．不可以。</p>
+<p>7．abstract类。</p>
+<p>8．上转型对象不能操作子类新增的成员变量，不能调用子类新增的方法。上转型对象可以访问子类继承或隐藏的成员变量，可以调用子类继承的方法或子类重写的实例方法。</p>
+<p>9．通过重写方法。</p>
+<p>10．面向抽象编程目的是为了应对用户需求的变化，核心是让类中每种可能的变化对应地交给抽象类的一个子类类去负责，从而让该类的设计者不去关心具体实现。</p>
+<p>二、选择题</p>
+<p><strong>1．</strong>C<strong>。2．</strong>D。<strong>3．</strong>CD。<strong>4．</strong>D<strong>。5．</strong>B。<strong>6．</strong>B<strong>。7．</strong>D。<strong>8．</strong>B。<strong>9．</strong>A。</p>
+<p>三、阅读程序</p>
+<p><strong>1．【</strong>代码1】：15.0。【代码2】：8.0。</p>
+<p><strong>2．【</strong>代码1】：11。【代码2】：11。</p>
+<p><strong>3．【</strong>代码1】：98.0。【代码2】：12。<strong>【</strong>代码3】：98.0。【代码4】：9。</p>
+<p><strong>4．【</strong>代码1】：120。【代码2】：120。<strong>【</strong>代码3】：-100。</p>
+<hr>
+<h2 id="习题6（第6章）"><a href="#习题6（第6章）" class="headerlink" title="习题6（第6章）"></a>习题6（第6章）</h2><p>一、问答题</p>
+<p>1．不能。</p>
+<p>2．不能。</p>
+<p>3．可以把实现某一接口的类创建的对象的引用赋给该接口声明的接口变量中。那么该接口变量就可以调用被类实现的接口中的方法。</p>
+<p>4．不可以。</p>
+<p>5．可以。</p>
+<p>二、选择题</p>
+<p><strong>1．</strong>D<strong>。2．</strong>AB。<strong>3．</strong>B。</p>
+<p>三、阅读程序</p>
+<p><strong>1．【</strong>代码1】：15.0。【代码2】：8。</p>
+<p><strong>2．【</strong>代码1】：18。【代码2】：15。</p>
+<hr>
+<h2 id="习题7（第7章）"><a href="#习题7（第7章）" class="headerlink" title="习题7（第7章）"></a>习题7（第7章）</h2><p>一、问答题</p>
+<p>1．有效。</p>
+<p>2．可以。</p>
+<p>3．不可以。</p>
+<p>4．一定是。</p>
+<p>二、选择题</p>
+<p><strong>1．</strong>C<strong>。2．</strong>C。</p>
+<p>三、阅读程序</p>
+<p><strong>1．</strong>大家好，祝工作顺利！</p>
+<p><strong>2．</strong>p是接口变量。</p>
+<p><strong>3．</strong>你好 fine thanks。</p>
+<p><strong>4．</strong>属于上机实习程序，解答略。</p>
+<hr>
+<h2 id="习题8（第8章）"><a href="#习题8（第8章）" class="headerlink" title="习题8（第8章）"></a>习题8（第8章）</h2><p>一、问答题</p>
+<p>1．不是。”\\hello”是。</p>
+<p>2．4和3。</p>
+<p>3．false和true。</p>
+<p>4．负数。</p>
+<p>5．是true。</p>
+<p>6．3和-1。</p>
+<p>7．会发生NumberFormatException异常。</p>
+<p>二、选择题</p>
+<p><strong>1．</strong>A<strong>。2．</strong>C。<strong>3．</strong>B<strong>。4．</strong>D。5<strong>．</strong>C。</p>
+<p>三、阅读程序</p>
+<p><strong>1．【</strong>代码】：苹果。</p>
+<p><strong>2．【</strong>代码】：Love:Game。</p>
+<p><strong>3．【</strong>代码1】：15。<strong>【</strong>代码2】：abc我们。</p>
+<p><strong>4．【</strong>代码】：13579。</p>
+<p><strong>5．【</strong>代码】：9javaHello。</p>
+<p><strong>6．</strong>属于上机实习程序，解答略。</p>
+<p><strong>7．</strong>属于上机实习程序，解答略。</p>
+<hr>
+<h2 id="习题9（第9章）"><a href="#习题9（第9章）" class="headerlink" title="习题9（第9章）"></a>习题9（第9章）</h2><p>一、问答题</p>
+<p>1．Frame容器的默认布局是BorderLayout布局。</p>
+<p>2．不可以用add方法添加窗口。</p>
+<p>3．JTextFiedler可以触发ActionEvent事件。</p>
+<p>4．JTextAreaDocumentEvent。</p>
+<p>5．5个。</p>
+<p>6．MouseMotionListener。</p>
+<p>二、选择题</p>
+<p>1．C。2．A。3．A。4．D。5．C。</p>
+<hr>
+<h2 id="习题10（第10章）"><a href="#习题10（第10章）" class="headerlink" title="习题10（第10章）"></a>习题10（第10章）</h2><p>一、问答题</p>
+<ol>
+<li>使用FileInputStream。</li>
+</ol>
+<blockquote>
+<p>字节:InputStream/OutputStream</p>
+<p>字符:Reader/Read /Write</p>
+</blockquote>
+<ol>
+<li>FileInputStream按字节读取文件，FileReader按字符读取文件。</li>
+<li>不可以。</li>
+<li>使用对象流写入或读入对象时，要保证对象是序列化的。</li>
+<li>使用对象流很容易得获取一个序列化对象的克隆，只需将该对象写入到对象输出流，那么用对象输入流读回的对象一定是原对象的一个克隆。</li>
+</ol>
+<p>二、选择题</p>
+<p>1．C。2．B。</p>
+<p>三、阅读程序</p>
+<ol>
+<li><p>【代码1】：51。【代码2】：0。</p>
+</li>
+<li><p>【代码1】：3。【代码2】：abc。<strong>【</strong>代码3】：1。【代码4】：dbc。</p>
+</li>
+<li><p>上机实习题，解答略。</p>
+</li>
+</ol>
+<hr>
+<h2 id="习题11（第11章）"><a href="#习题11（第11章）" class="headerlink" title="习题11（第11章）"></a>习题11（第11章）</h2><p>一、问答题</p>
+<p>1．**如何启动MySQL:**在MySQL安装目录的bin子目录下键入mysqld或mysqld -nt 启动MySQL数据库服务器。</p>
+<p>2．**数据库驱动jar应该拷贝:**复制到JDK的扩展目录中（即JAVA_HOME环境变量指定的JDK，见第1章的1.3.3），比如：E:\jdk1.8\jre\lib\ext。</p>
+<p>3．**预处理的好处:**减轻数据库内部SQL语句解释器的负担</p>
+<p>4．**事务是什么,处理步骤是怎么样的的:**事务由一组SQL语句组成，所谓事务处理是指：应用程序保证事务中的SQL语句要么全部都执行，要么一个都不执行。</p>
+<ul>
+<li>事务处理步骤是调用：<br>（1）连接对象用setAutoCommit()方法关闭自动提交模式，<br>（2）连接对象用commit()方法处理事务，<br>（3）连接对象用rollback()方法处理事务失败。</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://alittlemc.github.io/Academic/JAVA-tm-x/>https://alittlemc.github.io/Academic/JAVA-tm-x/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-09T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年1月9日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java%E4%B9%A0%E9%A2%98/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java习题</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://alittlemc.github.io/Academic/JAVA-tm-x/&title=Java临阵磨枪(全) - alittlemc_blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://alittlemc.github.io/Academic/JAVA-tm-x/&title=Java临阵磨枪(全) - alittlemc_blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://alittlemc.github.io/Academic/JAVA-tm-x/&title=Java临阵磨枪(全) - alittlemc_blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/Academic/HCIA-Security-tm/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>HCIA-Security(华为安全初级)题目(H12-711)</p>
+          <p class='content'>关于windows日志事件类型的描述，一下哪些选项是正确的？（多选）
+ A. 警告事件是指应用程序、驱动程序或服务的成功操作的事件--成功还警告个P 
+ B. 错误事件通常指功能和 数据的丢失。...</p>
+        </a>
+      
+      
+        <a class='next' href='/Academic/JAVA-tm-b/'>
+          <p class='title'>Java临阵磨枪(编程题)<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+输出char的Unicode值
+public class E &#123;   public static void main(String args[]) &#123;     System...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  
+
+
+
+
+
+
+</div>
+<aside class='l_side'>
+  
+
+</aside>
+
+
+
+        
+        
+          <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.postTitle="Java临阵磨枪(全)";
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+
+  var l_header=document.getElementById("l_header");
+  
+  l_header.classList.add("show");
+  
+</script>
+
+        
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      
+    
+      
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5" target="_blank" class="codename">Volantis</a>
+        作为主题
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a id="s-top" class="fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <script>
+window.volantis={};
+window.volantis.loadcss=document.getElementById("loadcss");
+/********************脚本懒加载函数********************************/
+function loadScript(src, cb) {
+var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+var script = document.createElement('script');
+script.setAttribute('type','text/javascript');
+if (cb) script.onload = cb;
+script.setAttribute('src', src);
+HEAD.appendChild(script);
+}
+//https://github.com/filamentgroup/loadCSS
+var loadCSS = function( href, before, media, attributes ){
+	var doc = window.document;
+	var ss = doc.createElement( "link" );
+	var ref;
+	if( before ){
+		ref = before;
+	}
+	else {
+		var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+		ref = refs[ refs.length - 1];
+	}
+	var sheets = doc.styleSheets;
+	if( attributes ){
+		for( var attributeName in attributes ){
+			if( attributes.hasOwnProperty( attributeName ) ){
+				ss.setAttribute( attributeName, attributes[attributeName] );
+			}
+		}
+	}
+	ss.rel = "stylesheet";
+	ss.href = href;
+	ss.media = "only x";
+	function ready( cb ){
+		if( doc.body ){
+			return cb();
+		}
+		setTimeout(function(){
+			ready( cb );
+		});
+	}
+	ready( function(){
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+	});
+	var onloadcssdefined = function( cb ){
+		var resolvedHref = ss.href;
+		var i = sheets.length;
+		while( i-- ){
+			if( sheets[ i ].href === resolvedHref ){
+				return cb();
+			}
+		}
+		setTimeout(function() {
+			onloadcssdefined( cb );
+		});
+	};
+	function loadCB(){
+		if( ss.addEventListener ){
+			ss.removeEventListener( "load", loadCB );
+		}
+		ss.media = media || "all";
+	}
+	if( ss.addEventListener ){
+		ss.addEventListener( "load", loadCB);
+	}
+	ss.onloadcssdefined = onloadcssdefined;
+	onloadcssdefined( loadCB );
+	return ss;
+};
+</script>
+<script>
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
+  
+  
+  
+  
+</script>
+<!-- required -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+
+
+  
+  
+
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='option'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-text' onclick="document.execCommand('copy')"><i class='fa fa-copy fa-fw'></i>复制文本</a>
+        <hr id='hr-text'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-href'><i class='fa fa-link fa-fw'></i>复制链接</a>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-open-href'><i class='fa fa-external-link-square-alt fa-fw'></i>在新标签页打开</a>
+        <hr id='hr-href'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-src'><i class='fa fa-image fa-fw'></i>复制图片地址</a>
+        <hr id='hr-src'>
+      </li>
+      
+        <li class='navigation'>
+          <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+        </li>
+      
+      <hr>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <hr>
+        
+      
+        
+      
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' 
+        
+        
+        
+          onclick="document.execCommand('print')"
+        
+        >
+        <i class='fa fa-print fa-fw'></i> 打印页面
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+
+  <script>
+    window.document.oncontextmenu = function (event) {
+      if (event.ctrlKey) return true;
+      if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true;
+      return popMenu(event);
+    };
+    document.addEventListener("click", function (event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      mymenu.style.display = "none";
+    });
+    function popMenu(event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      var menuContent = document.getElementById('rightmenu-content');
+      var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      mymenu.style.left = event.clientX + "px"; // 获取鼠标位置
+      mymenu.style.top = event.clientY + "px";
+      mymenu.style.display = 'block';
+      if (event.clientX * 2 > screenWidth) {
+        menuContent.classList.add('left');
+      } else {
+        menuContent.classList.remove('left');
+      }
+      if (event.clientY * 2 > screenHeight) {
+        menuContent.classList.add('top');
+      } else {
+        menuContent.classList.remove('top');
+      }
+
+      let hrText = document.getElementById('hr-text');
+      let hrSrc = document.getElementById('hr-src');
+      let hrHref = document.getElementById('hr-href');
+
+      // 选中图片
+      let copySrc = document.getElementById('menu-copy-src');
+      if (copySrc != undefined) {
+        if (event.target.currentSrc) {
+          copySrc.style.display = 'block';
+          copySrc.addEventListener("click", function (e) {
+            copyString(event.target.currentSrc);
+          },{once: true});
+          hrSrc.style.display = 'block';
+        } else {
+          copySrc.style.display = 'none';
+          hrSrc.style.display = 'none';
+        }
+      }
+
+      // 选中按钮
+      // 判断是不是按钮
+      let href = '';
+      if (event.path) {
+        for (i = 0; i < event.path.length; i++) {
+          if (event.path[i].href != undefined && event.path[i].href.length > 0) {
+            href = event.path[i].href;
+          }
+        }
+      }
+
+      let copyText = document.getElementById('menu-copy-text');
+      copyText.style.display = 'none';
+      hrText.style.display = 'none';
+      if (href.length == 0) {
+        // 选中文本
+        if (window.getSelection().toString()) {
+          if ('' == 'true') {
+            copyText.style.display = 'block';
+            hrText.style.display = 'block';
+          }
+        }
+      }
+
+      // 在新标签页打开
+      let openHref = document.getElementById('menu-open-href');
+      if (openHref != undefined) {
+        if (href.length > 0) {
+          openHref.style.display = 'block';
+          openHref.addEventListener("click", function (e) {
+            window.open(href);
+          },{once: true});
+          hrHref.style.display = 'block';
+        } else {
+          openHref.style.display = 'none';
+          hrHref.style.display = 'none';
+        }
+      }
+      // 复制链接
+      let copyHref = document.getElementById('menu-copy-href');
+      if (copyHref != undefined) {
+        if (href.length > 0) {
+          copyHref.style.display = 'block';
+          copyHref.addEventListener("click", function (e) {
+            copyString(href);
+          },{once: true});
+        } else {
+          copyHref.style.display = 'none';
+        }
+      }
+
+      // 有音乐播放器
+      if ('true' == true && ('home,help,examples,contributors,hr,source_docs,source_theme,hr,print,hr,music'||[]).includes('music')) {
+        // 如果有aplayer，初始化一下
+      	try {
+      		checkAPlayer();
+          updateTitle();
+      	} catch (error) {
+      		console.log(error);
+      	}
+      }
+
+      return false; // 该行代码确保系统自带的右键菜单不会被调出
+    }
+    function hideMenu() {
+      document.getElementById('rightmenu-wrapper').style.display = 'none';
+    }
+    function copyString(str) {
+      const input = document.createElement('input');
+      input.setAttribute('readonly', 'readonly');
+      document.body.appendChild(input);
+      input.setAttribute('value', str);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+    document.execCommand('click');
+  </script>
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '598126807';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.4';
+setTimeout(function() {
+  loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css", window.volantis.loadcss);
+
+  loadScript("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js")
+
+  loadScript("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
+
+
+	
+	  loadScript('https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/aplayer.min.js');
+	
+
+}, 10000);
+</script>
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/app.min.js"></script>
+
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js"></script>
+
+  
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+function listenSearch(){
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+}
+document.addEventListener("DOMContentLoaded", listenSearch);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function listennSidebarTOC() {
+  const navItems = document.querySelectorAll(".toc li");
+  if (!navItems.length) return;
+  const sections = [...navItems].map((element) => {
+    const link = element.querySelector(".toc-link");
+    const target = document.getElementById(
+      decodeURI(link.getAttribute("href")).replace("#", "")
+    );
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({
+		top: target.offsetTop + 100,
+		
+		behavior: "smooth"
+		
+	  });
+    });
+    return target;
+  });
+
+  function activateNavByIndex(target) {
+    if (target.classList.contains("active-current")) return;
+
+    document.querySelectorAll(".toc .active").forEach((element) => {
+      element.classList.remove("active", "active-current");
+    });
+    target.classList.add("active", "active-current");
+    let parent = target.parentNode;
+    while (!parent.matches(".toc")) {
+      if (parent.matches("li")) parent.classList.add("active");
+      parent = parent.parentNode;
+    }
+  }
+
+  function findIndex(entries) {
+    let index = 0;
+    let entry = entries[index];
+    if (entry.boundingClientRect.top > 0) {
+      index = sections.indexOf(entry.target);
+      return index === 0 ? 0 : index - 1;
+    }
+    for (; index < entries.length; index++) {
+      if (entries[index].boundingClientRect.top <= 0) {
+        entry = entries[index];
+      } else {
+        return sections.indexOf(entry.target);
+      }
+    }
+    return sections.indexOf(entry.target);
+  }
+
+  function createIntersectionObserver(marginTop) {
+    marginTop = Math.floor(marginTop + 10000);
+    let intersectionObserver = new IntersectionObserver(
+      (entries, observe) => {
+        let scrollHeight = document.documentElement.scrollHeight + 100;
+        if (scrollHeight > marginTop) {
+          observe.disconnect();
+          createIntersectionObserver(scrollHeight);
+          return;
+        }
+        let index = findIndex(entries);
+        activateNavByIndex(navItems[index]);
+      },
+      {
+        rootMargin: marginTop + "px 0px -100% 0px",
+        threshold: 0,
+      }
+    );
+    sections.forEach((element) => {
+      element && intersectionObserver.observe(element);
+    });
+  }
+  createIntersectionObserver(document.documentElement.scrollHeight);
+}
+
+document.addEventListener("DOMContentLoaded", listennSidebarTOC);
+document.addEventListener("pjax:success", listennSidebarTOC);
+</script>
+
+<!-- more -->
+
+
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#l_cover",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      //window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      volantis.$switcher.removeClass('active'); // 关闭移动端激活的搜索框
+      volantis.$header.removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      volantis.$wrapper.removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      volantis.$topBtn.unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+	  
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+	  
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+	  
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+</body>
+</html>
